@@ -5,6 +5,7 @@
 FROM golang:alpine as builder
 
 # Install MailHog:
+# https://go.dev/doc/go-get-install-deprecation
 RUN apk --no-cache add --virtual build-dependencies \
     git \
   && mkdir -p /root/gocode \
